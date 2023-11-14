@@ -1,7 +1,4 @@
-import { compare } from "bcryptjs";
 import prismaClient from "../../prisma";
-import { sign } from "jsonwebtoken";
-
 class DetailUserService {
   async execute(user_id: string) {
     const user = await prismaClient.user.findFirst({
