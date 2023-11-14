@@ -1,5 +1,4 @@
 import { Request, Response } from "express";
-import { CreateCategoryService } from "../../services/category/CreateCategoryService";
 import { ListCategoryService } from "../../services/category/ListCategoryService";
 
 class ReadCategoryController {
