@@ -1,12 +1,12 @@
 import { Request, Response } from "express";
 import { CreateCategoryService } from "../../services/category/CreateCategoryService";
-import { ReadCategoryService } from "../../services/category/ReadCategoryService";
+import { ListCategoryService } from "../../services/category/ListCategoryService";
 
 class ReadCategoryController {
   async handle(req: Request, res: Response) {
-    const readCategoryService = new ReadCategoryService();
+    const listCategoryService = new ListCategoryService();
 
-    const category = await readCategoryService.execute();
+    const category = await listCategoryService.execute();
 
     return res.json(category);
   }
