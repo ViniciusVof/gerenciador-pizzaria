@@ -4,7 +4,7 @@ import { AuthUserController } from "./controllers/user/AuthUserController";
 import { DetailUserController } from "./controllers/user/DetailUserController";
 import { isAuthenticated } from "./middlewares/isAuthenticated";
 import { CreateCategoryController } from "./controllers/category/CreateCategoryController";
-import { ReadCategoryController } from "./controllers/category/ReadCategoryController";
+import { ReadCategoryController } from "./controllers/category/ListCategoryController";
 
 const router = Router();
 
